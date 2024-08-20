@@ -10,9 +10,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -29,17 +31,25 @@ fun Profile(name: String, profession: String, modifier: Modifier) {
         verticalArrangement = Arrangement.Bottom,
         modifier = modifier
     ) {
-        Image(painter = logo, contentDescription = null)
+        Image(
+            painter = logo,
+            contentDescription = null,
+            )
+
         Text(
             text = name,
             fontSize = 36.sp,
+            fontWeight = FontWeight.Black,
+            color = Color(rgb(235,174,169)),
             modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
         )
 
         Text(
             text = profession,
             fontSize = 20.sp,
-            color = Color(rgb(127, 161, 195))
+            fontWeight = FontWeight.Bold,
+            color = Color(rgb(8,27,80)),
+            modifier = Modifier.alpha(0.8f)
         )
     }
 }
