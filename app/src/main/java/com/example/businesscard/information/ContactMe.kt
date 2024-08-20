@@ -40,7 +40,7 @@ fun Info(icon: ImageVector, contactInfo: String, modifier: Modifier = Modifier) 
 
 
 @Composable
-fun ContactInfo (modifier: Modifier) {
+fun ContactInfo (modifier: Modifier = Modifier) {
 
     Column(
         verticalArrangement = Arrangement.Center,
