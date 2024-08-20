@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Business Card</string>
-    <string name="phone_number">+1-347-470-6862</string>
+    <string name="phone_number">+1&#8211;347&#8211;470&#8211;6862</string>
     <string name="dev_username">\@coolPanda</string>
     <string name="email_address">fernandopeguerofs@gmail.com</string>
+    <string name="name">Fernando Peguero</string>
+    <string name="profession">Software Engineer</string>
+
 </resources>
