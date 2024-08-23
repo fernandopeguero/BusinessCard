@@ -39,7 +39,7 @@ fun Info(icon: ImageVector, contactInfo: String, modifier: Modifier = Modifier) 
         Text(
             text = contactInfo,
             fontSize = 16.sp,
-            fontWeight = FontWeight(400),
+            fontWeight = FontWeight(500),
             color = Color.Black
         )
     }
