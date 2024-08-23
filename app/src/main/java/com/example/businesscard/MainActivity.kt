@@ -21,25 +21,20 @@ class MainActivity : ComponentActivity() {
         setContent {
             BusinessCardTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    BusinessCard(Modifier.fillMaxSize().padding(innerPadding))
+                    BusinessCard(
+                        Modifier
+                            .fillMaxSize()
+                            .padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     BusinessCardTheme {
-        Greeting("Android")
+        BusinessCard(Modifier.fillMaxSize())
     }
 }
